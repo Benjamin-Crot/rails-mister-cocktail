@@ -1,0 +1,13 @@
+<div class = 'container'>
+  <h1>List of Cocktails</h1>
+
+  <div class="cards">
+    <% @cocktails.each do |cocktail| %>
+      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://static1.villaschweppes.com/articles/1/49/09/1/@/352763-le-cocktail-gimlet-opengraph_1200-2.jpeg)">
+        <%= link_to cocktail.name, cocktail_path(cocktail)%>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+
