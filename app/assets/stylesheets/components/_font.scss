@@ -7,3 +7,12 @@ h1 {
   padding: 30px;
   text-align: center;
 }
+
+a {
+  color : white;
+
+  &:hover {
+    text-decoration: none;
+    color: grey;
+  }
+}
